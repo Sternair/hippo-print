@@ -1,0 +1,15 @@
+{
+    "prod": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-hippo-print-prod-143829-authRole",
+            "UnauthRoleArn": "arn:aws:iam::293735549591:role/amplify-hippo-print-prod-143829-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::293735549591:role/amplify-hippo-print-prod-143829-authRole",
+            "Region": "eu-central-1",
+            "DeploymentBucketName": "amplify-hippo-print-prod-143829-deployment",
+            "UnauthRoleName": "amplify-hippo-print-prod-143829-unauthRole",
+            "StackName": "amplify-hippo-print-prod-143829",
+            "StackId": "arn:aws:cloudformation:eu-central-1:293735549591:stack/amplify-hippo-print-prod-143829/56ec3750-855f-11ea-acd9-0aee1f35785e",
+            "AmplifyAppId": "d179gc63nzbazz"
+        }
+    }
+}
