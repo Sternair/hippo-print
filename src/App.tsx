@@ -6,88 +6,46 @@ function App() {
   return (
    <>
   
-  <nav className="navbar navbar-expand-lg navbar-light bg">
-  
-  <a className="navbar-brand HippoLogo" href="#">
-    <img src="hippo_print.jpg"alt="" ></img>
-  </a>
-   <a className="navbar-brand" href="#">Hippo Print</a>
-    
-   <button className="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
-    aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span className="dark-blue-text"><i
-        className="fas fa-bars fa-1x"></i></span></button>
-
-<div className="collapse navbar-collapse" id="navbarSupportedContent1">
+<nav className="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  <div className="container">
+    <a className="navbar-brand" href="#">
+          <img src="hippo_print.jpg" alt=""></img>
+        </a>
+    <a className="navbar-brand" href="#">Hippo Print</a>
     
     <ul className="navbar-nav ml-auto">
     <li className="nav-item">
-      <a className="nav-link" href="#">Home</a>
+      <a className="nav-link" href="#">Covid-19</a>
     </li>
     <li className="nav-item">
-      <a className="nav-link" href="#">Pricing</a>
+      <a className="nav-link" href="#">Membership</a>
     </li>
     <li className="nav-item">
-      <a className="nav-link" href="#">Newsroom</a>
+      <a className="nav-link" href="#">Engage</a>
     </li>
     <li className="nav-item">
       <a className="nav-link" href="#">About</a>
     </li>
     <li className="nav-item">
-      <a className="nav-link" href="#">Contact</a>
+      <a className="nav-link" href="#">New</a>
     </li>
     <li><button type="submit" className="btn navbar-btn btn-info" name="my-acc" id="my-acc"  value="My Account">My Account</button></li>
     <li><button type="submit" className="btn navbar-btn btn-info" name="sign-up" id="sign-up"  value="Sign up">Sign Up</button></li>
   </ul>
-</div>
-  </nav>
- 
-
-<h1>Europe’s Digital Manufacturing Community Making Medical Manufacturing Local Again</h1>
-
-<div className="container" id = "ideaContainer">
-<div className="row">
-            <div className="col-2" id ="idea">
-                <div className="idea1" color= "white">Health Providers</div>
-                </div> 
-    
-                <div className="col-2" id="manufacturer">
-                  <div className="data1"> Manufacturers</div>
-                </div>
-    
-                <div className="col-2" id="funding">
-                  <div className="funding1">Design Collections</div>
-            
-                </div>
-                
-                <div className="col-2" id="database">
-                  <div className="funding1">Covid-19 Collection</div>
-            
-                </div>                        
-</div>  
-</div>
-
-<div className="container" id = "homeContainer">
-
-<div className="row">
-
-  <div className="col-md-4">
-  <h2 id="builtformedical">Built for Medical Innovators</h2>
-  <p id="hippo-print-landingpage">HIPPO PRINT is a collaborative community in digital manufacturing. 
-  We accelerate the adoption of open source digital manufacturing technologies that focus on optimizing the medical supply chain and increase efficiency and agility, while lowering the carbon footprint and price. 
-  </p></div>
-
-  <div className="col-md-8">
-  
-  <div className="col-sm-4 mx-auto">
-   <div className="header-title">
-		<h2 className="wv-heading--title">
-		   Check out — it’s free!
-		</h2>
-	 </div>
   </div>
+</nav>          
 
-  <div className="col-md-8 mx-auto">
-		<div className="myform form ">
+            
+<div className="container">
+    <div className="row">
+        <div className="col-6" id="assistance">
+            <div className="ass">Built for Medical Innovators</div>
+    
+            <div className="prof">Europe’s Digital Manufacturing Community Making Medical Manufacturing Local Again</div>
+    
+            <div className="chance">HIPPO PRINT is a collaborative community in digital manufacturing. We accelerate the adoption of open source digital manufacturing technologies that focus on optimizing the medical supply chain and increase efficiency and agility, while lowering the carbon footprint and price.</div> 
+       
+    <div className="signup form " id="signupform">
 		   <form action="" method="post" name="login">
 			  <div className="form-group">
 				 <input type="text" name="name"  className="form-control my-input" id="name" placeholder="Name"></input>
@@ -116,8 +74,36 @@ function App() {
 			  </p>
 		   </form>
 		</div>
+       
+       
+       
+        </div>
+    
+        
+        <div className="col-6">
+            
+                <div className="col-12-sm" id ="idea"> <div className="idea1">Health Providers</div>
+                <div className="idea2">Get your project evaluated, and get an overview of your funding opportunities</div>
+                </div>
+    
+                <div className="col-12-sm" id="database"><div className="data1"> OVID-19 Collection</div>
+                <div className="data2">Access our funds database, and start searching for funds matching your criteria</div>
+                </div>
+    
+                <div className="col-12-sm" id="funding"><div className="funding1">Design Collections</div>
+                <div className="funding2">Get help writing your applications, and make sure you arent missing anything</div>
+                </div>
+                
+                <div className="col-12-sm" id="manufacturers" > <div className="manufacturers1">Manufacturers</div>
+                <div className="manufacturers2">Get help writing your applications, and make sure you arent missing anything</div>
+                </div>
     </div>
-     
+
+</div>
+  
+<div className="container">
+
+    
     <div className="row">
         
         <div className="rolig col-6">
@@ -134,25 +120,19 @@ function App() {
         
         </div>
         </div>
+    
     </div> 
 
     <div className="row">
     
-        <div className="copyright col-12">
-        @EUvsVirus Team HippoPrint
+        <div className="copyright col-12" id="copyright">
+        @Copyright HippoPrint EUvsVirus
     </div>
     
     </div>
-
-
-
-
-	 </div>
-   </div>
-
-
-  </div>
-  
+        
+    </div>        
+  </div> 
   </>
   
   );

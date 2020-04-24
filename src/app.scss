@@ -1,94 +1,78 @@
-h1 {
-
-    color: black;
-	text-align: center;
-	margin-top: 100px;
-}
-
-#navbarSupportedContent
-
-{
-    text-align: left;
-}
-
-.navbar.navbar-1 .navbar-toggler-icon {
-	background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
-}
-
-#builtformedical {
-    font-size: 40px;
-    margin-top: 80px;
-}
-
-
-#hippo-print-landingpage
-{
-	margin-top: 50px;
-	color: red;
-}
-
 .container {
-    color:grey;
+    
+    margin-top: 70px;
+    color: white;
 }
 
 body {
-    color: white;
+    
+    background:white !important;
+    color: grey;
+}
+
+#copyright {
+	color: grey !important;
+}
+
+#signupform {
+	margin-top: 80px;
 }
 
 #idea {
     
-	margin-top: 50px;
-	margin-right: 40px;
+    margin-top: 50px;
+    margin-left: 100px;
     padding-top: 20px;
-    padding-left: 20px;
-    padding-bottom: 20px;
-    background-color: #f14d4d;
+    padding-right: 50px;
+    padding-left: 50px;
+     padding-bottom: 50px;
+    background-color: red;
+}
+
+#manufacturers {
+    
+    margin-top: 50px;
+    margin-left: 100px;
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+     padding-bottom: 50px;
+    background-color: red;
 }
 
 #database {
     
     margin-top: 50px;
-	margin-left: 5px;
-	margin-right: 40px;
+    margin-left: 100px;
     padding-top: 20px;
-    padding-left: 20px;
-    padding-bottom: 20px;
-    background-color: #f14d4d;
+    padding-right: 50px;
+    padding-left: 50px;
+     padding-bottom: 50px;
+    background-color: red;
 }
 
 #funding {
     
     margin-top: 50px;
-	margin-left: 5px;
-	margin-right: 40px;
+    margin-left: 100px;
     padding-top: 20px;
-    padding-left: 20px;
-    padding-bottom: 20px;
-    background-color: #f14d4d;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    background-color: red;
 }
-
-#manufacturer {
-    
-    margin-top: 50px;
-	margin-left: 5px;
-	margin-right: 40px;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-bottom: 20px;
-    background-color: #f14d4d;
-}
-
 
 #assistance {
     
     margin-top: 50px;
-    margin-left: -50px;
+	margin-left: -50px;
+	color: grey !important;
     
 }
 
 .prof {
     margin-top: 20px;
-    font-size: 70px;
+    font-size: 30px;
 }
 
 .ass {
@@ -103,8 +87,17 @@ body {
     font-size: 25px;
 }
 
+.manufacturers1 {
+    font-size: 25px;
+}
+.manufacturers2  {
+    color: white;
+    padding-top: 10px;
+}
+
+
 .idea2 {
-	color: white !important;
+    color: white;
     padding-top: 10px;
 }
 
@@ -147,7 +140,7 @@ body {
 
 .rolig {
 	margin-top: 50px;
-	float: left;
+	color: grey;
 }
 
 .copyright{
@@ -157,7 +150,7 @@ body {
 }
 
 .navbar a {
-    color: white;
+    color: grey;
 }
 
 
