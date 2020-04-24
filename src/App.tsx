@@ -107,7 +107,7 @@ function App() {
     <div className="row">
         
         <div className="rolig col-6">
-        Rolighedsvej, 1b, 8450 Hammel, Denmark
+        Europe
         </div>
         
         <div className="col-6">
