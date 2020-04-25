@@ -5,9 +5,9 @@
     "javascript": {
         "framework": "react",
         "config": {
-            "SourceDir": "src",
-            "DistributionDir": "build",
-            "BuildCommand": "yarn build",
+            "SourceDir": "pages",
+            "DistributionDir": "out",
+            "BuildCommand": "yarn build && yarn export",
             "StartCommand": "yarn start"
         }
     },
