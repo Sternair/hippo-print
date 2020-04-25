@@ -1,0 +1,28 @@
+.navbar {
+  &.bg-light {
+    background-color: #FFF !important;
+  }
+  &-nav{
+    align-items: center;
+    .nav-item:not(:last-of-type) {
+      margin: {
+        right: 40px;
+      }
+    }
+  }
+  border: {
+    style: solid;
+    color: #e0e0e0;
+    width: 1px;
+  }
+  .container {
+    margin: {
+      top: 0;
+      bottom: 0;
+    }
+  }
+
+  .btn-login {
+    padding: 2px 56px;
+  }
+}
