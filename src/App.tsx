@@ -39,11 +39,11 @@ function App() {
 <div className="container">
     <div className="row">
         <div className="col-6" id="assistance">
-            <div className="ass">Built for Medical Innovators</div>
+            <h2>Built for Medical Innovators</h2>
     
-            <div className="prof">Europe’s Digital Manufacturing Community Making Medical Manufacturing Local Again</div>
+            <h1>Europe’s Digital Manufacturing Community Making Medical Manufacturing Local Again</h1>
     
-            <div className="chance">HIPPO PRINT is a collaborative community in digital manufacturing. We accelerate the adoption of open source digital manufacturing technologies that focus on optimizing the medical supply chain and increase efficiency and agility, while lowering the carbon footprint and price.</div> 
+            <p>HIPPO PRINT is a collaborative community in digital manufacturing. We accelerate the adoption of open source digital manufacturing technologies that focus on optimizing the medical supply chain and increase efficiency and agility, while lowering the carbon footprint and price.</p>
        
     <div className="signup form " id="signupform">
 		   <form action="" method="post" name="login">
@@ -86,7 +86,7 @@ function App() {
                 <div className="idea2">Get your project evaluated, and get an overview of your funding opportunities</div>
                 </div>
     
-                <div className="col-12-sm" id="database"><div className="data1"> OVID-19 Collection</div>
+                <div className="col-12-sm" id="database"><div className="data1"> COVID-19 Collection</div>
                 <div className="data2">Access our funds database, and start searching for funds matching your criteria</div>
                 </div>
     

@@ -1,1 +1,58 @@
 @import '~bootstrap/scss/bootstrap.scss';
+
+h1{
+	font-size: 31px;
+	line-height: 40px;
+	font-weight: 600;
+	color:#4c5357;
+}
+h2{
+	color: #5e8396;
+	font-size: 21px;
+	line-height: 32px;
+	font-weight: 400;
+}
+
+.container {
+    
+    margin-top: 70px;
+    color: white;
+}
+
+.navbar a {
+    color: grey;
+}
+
+body {
+    
+    background:white !important;
+    color: grey;
+}
+
+.copyright{
+    text-align: center;
+    color: grey;
+    margin-top: 30px;
+}
+
+.footeritems {
+    text-align: right;
+}
+
+#signupform {
+	margin-top: 80px;
+}
+
+.languagepicker {
+    float: right;
+    margin-top: 50px;
+}
+
+.fundingeu {
+    margin-left: 30px;
+}
+
+.rolig {
+	margin-top: 50px;
+	color: grey;
+}
