@@ -7,7 +7,7 @@
         "config": {
             "SourceDir": "pages",
             "DistributionDir": "out",
-            "BuildCommand": "yarn build && yarn export",
+            "BuildCommand": "yarn build:export",
             "StartCommand": "yarn start"
         }
     },
