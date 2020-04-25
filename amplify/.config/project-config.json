@@ -7,7 +7,7 @@
         "config": {
             "SourceDir": "lib",
             "DistributionDir": "build",
-            "BuildCommand": "yarn build:export",
+            "BuildCommand": "yarn build",
             "StartCommand": "yarn start"
         }
     },
