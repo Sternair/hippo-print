@@ -1,15 +1,17 @@
-import React from 'react'
-import './app.scss'
-import Header from './header/Header'
-import MainPage from './Main/Main'
+import React from 'react';
+import "./app.scss";
+import "./style.scss";
+import Header from './header/Header';
+import Main from './Main/Main';
 
 function App() {
   return (
-    <>
-      <Header></Header>
-      <MainPage></MainPage>
-    </>
-  )
+   <>
+   <Header></Header>
+   <Main></Main>
+  </>
+
+  );
 }
 
 export default App
