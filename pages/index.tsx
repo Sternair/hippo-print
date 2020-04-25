@@ -1,20 +1,19 @@
-import React from 'react';
-import './style.scss';
-import App from './App';
+import React from 'react'
+import Amplify from 'aws-amplify'
+import './style.scss'
+import App from './App'
+import awsExports from '../lib/aws-exports'
 
-// import * as serviceWorker from './serviceWorker';
-import Amplify from "aws-amplify";
-// import awsExports from "./aws-exports";
-// Amplify.configure(awsExports);
+Amplify.configure(awsExports)
 
 export default class extends React.Component {
 
-  render () {
+  render() {
     return (
       <React.StrictMode>
-        <App />
+        <App/>
       </React.StrictMode>
-    );
+    )
   }
 }
 

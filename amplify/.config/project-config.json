@@ -5,7 +5,7 @@
     "javascript": {
         "framework": "react",
         "config": {
-            "SourceDir": "pages",
+            "SourceDir": "lib",
             "DistributionDir": "out",
             "BuildCommand": "yarn build:export",
             "StartCommand": "yarn start"
