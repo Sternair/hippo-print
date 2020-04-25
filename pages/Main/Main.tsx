@@ -1,13 +1,9 @@
 import React, { useState } from "react";
-import { Modal, Button } from "react-bootstrap";
 
 import "./Main.scss";
+import SignUpButton from '../components/SignUp/SignUpButton';
 
 const Main = () => {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
 
   return (
     <div className="container main">
@@ -25,37 +21,9 @@ const Main = () => {
             digital manufacturing technologies that focus on optimizing the medical supply chain and increase efficiency
             and agility, while <b>lowering the carbon footprint</b> and price.
           </div>
-          <button className="btn btn-primary" onClick={handleShow}>
-            Sign Up for Hippo Print
-          </button>
-          <Modal show={show} onHide={handleClose}>
-            <Modal.Header closeButton>
-              <Modal.Title>Sign Up</Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-              <form action="">
-                <div>
-                  <label htmlFor="username">Username</label>
-                  <input type="text" />
-                </div>
-                <div>
-                  <label htmlFor="email">Email</label>
-                  <input type="text" />
-                </div>
-                <div>
-                  <label htmlFor="password">Password</label>
-                  <input type="password" />
-                </div>
-              </form>
-            </Modal.Body>
-            <Modal.Footer>
-              <Button variant="primary" onClick={handleClose}>
-                Sign Up for Hippo Print
-              </Button>
-            </Modal.Footer>
-          </Modal>
+          <SignUpButton />
         </div>
-        <div className="col-3">img</div>
+        <div className="col-3">_img_</div>
       </div>
       <div className="row">
         <div className="col-6">
