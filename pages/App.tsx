@@ -2,7 +2,7 @@ import React from 'react';
 import "./app.scss";
 import "./style.scss";
 import Header from './header/Header';
-import MainPage from './mainPage/MainPage';
+import MainPage from './Main/Main';
 
 function App() {
   return (

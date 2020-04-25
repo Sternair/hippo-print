@@ -1,7 +1,8 @@
 const withSass = require('@zeit/next-sass');
-const withOffline = require('next-offline')
+const withOffline = require('next-offline');
+const withImages = require('next-images');
 
-module.exports = withOffline(withSass({
+module.exports = withOffline(withImages(withSass({
     webpack: (config, { isServer }) => {
         // Fixes npm packages that depend on `fs` module
         if (!isServer) {
@@ -12,4 +13,4 @@ module.exports = withOffline(withSass({
 
         return config
       }
-}));
+})));
