@@ -21,7 +21,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "build:export": "next build && next export",
+    "build:export": "next build && next export -o build",
     "start": "next start"
   },
   "eslintConfig": {

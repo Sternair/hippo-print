@@ -6,7 +6,7 @@
         "framework": "react",
         "config": {
             "SourceDir": "lib",
-            "DistributionDir": "out",
+            "DistributionDir": "build",
             "BuildCommand": "yarn build:export",
             "StartCommand": "yarn start"
         }
