@@ -7,7 +7,7 @@ const SignUpButton = () => {
   return (
     <Link href="/login">
       <button className="btn btn-primary btn-sign-up">
-        Sign Up for Hippo Print
+        Sign Up for Hippo Makes
       </button>
     </Link>
   )
