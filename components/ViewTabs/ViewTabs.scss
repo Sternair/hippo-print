@@ -1,0 +1,15 @@
+@import '../../styles/variables.scss';
+
+.view-tabs{
+  &.nav-tabs {
+    .nav-link {
+      a {
+        color: #000;
+      }
+      &.active {
+        border-color: transparent;
+        border-bottom: 2px $primary-color solid;
+      }
+    }
+  }
+}
