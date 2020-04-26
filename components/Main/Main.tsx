@@ -15,7 +15,7 @@ const Main = () => {
   })
 
   return (
-    <>
+    <div className='main'>
       <div className="row">
         <div className="col-12">
           <h1 className="title">Europe’s Digital Manufacturing Community Making Medical Manufacturing Local Again</h1>
@@ -25,7 +25,7 @@ const Main = () => {
         <article className="col-8 main-info">
           <h2 className="subtitle">Built for Medical Innovators</h2>
           <div className="app-description">
-            <b>HIPPO PRINT</b> is a collaborative community in digital manufacturing. We accelerate the adoption of <b>open
+            <b>HIPPO MMAKES</b> is a collaborative community in digital manufacturing. We accelerate the adoption of <b>open
             source</b> digital manufacturing technologies that focus on optimizing the medical supply chain and increase
             efficiency
             and agility, while <b>lowering the carbon footprint</b> and price.
@@ -46,7 +46,7 @@ const Main = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

@@ -34,7 +34,7 @@ const navItems = [
   },
   {
     label: 'Community Projects',
-    link: '#',
+    link: '/community',
   },
   {
     label: 'Academia',

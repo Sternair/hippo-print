@@ -1,0 +1,18 @@
+@import '../../styles/variables.scss';
+
+.view-tabs{
+  background-color: #FFF;
+  &.nav-tabs {
+    .nav-link {
+      color: #000;
+      &:hover, &:focus {
+        border-color: transparent;
+        border-bottom: 3px $primary-color solid;
+      }
+      &.active {
+        border-color: transparent;
+        border-bottom: 3px $primary-color solid;
+      }
+    }
+  }
+}

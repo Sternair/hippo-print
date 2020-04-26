@@ -1,6 +1,6 @@
 import React from 'react';
 import "./App.scss";
-import "../style.scss";
+import "../styles/style.scss";
 import Main from './Main/Main';
 import Layout from './Layout/Layout';
 
