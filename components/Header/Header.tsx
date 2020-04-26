@@ -2,31 +2,36 @@ import React, { useEffect, useState } from 'react'
 import { Auth } from 'aws-amplify'
 import { AmplifySignOut } from '@aws-amplify/ui-react'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import './Header.scss'
 
 const Header = () => {
+  const router = useRouter()
   const [isLoggedIn, setLogIn] = useState(false)
 
   useEffect(() => {
     Auth.currentAuthenticatedUser()
       .then(() => setLogIn(true))
-      .catch(e => {}) // throws if user is not logged in --> ignore
+      .catch(e => {
+      }) // throws if user is not logged in --> ignore
   })
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light static-top">
       <div className="container">
-        <a className="navbar-brand" href="#">
-          <img src="./logo" alt=""></img>
-          Hippo Print
+        <a className="navbar-brand" href="/">
+          <img src="./HippoMakes_Logo_v2.png" height="30" alt="hippo makes brand logo"/>
         </a>
 
         <ul className="navbar-nav ml-auto">
-          {navItems.map((item, i) => <li className="nav-item" key={i}>
-              <a className="nav-link" href="{item.link}">
-                {item.label}
-              </a>
+          {navItems.map((item, i) => (
+            <li className={`nav-item${router.pathname === item.link ? ' active' : ''}`} key={i}>
+              <Link href={item.link}>
+                <a className="nav-link">
+                  {item.label}
+                </a>
+              </Link>
             </li>
-          )}
+          ))}
           <li>
             {
               isLoggedIn ? (
@@ -49,34 +54,27 @@ const Header = () => {
 const navItems = [
   {
     label: 'Covid-19',
-    link: '#',
-    id: ''
+    link: '#'
+  },
+  {
+    label: 'Gallery',
+    link: '/gallery'
   },
   {
     label: 'Membership',
-    link: '#',
-    id: ''
+    link: '#'
   },
   {
     label: 'Engage',
-    link: '#',
-    id: ''
+    link: '#'
   },
   {
     label: 'About',
-    link: '#',
-    id: ''
-  },
-  {
-    label: 'New',
-    link: '#',
-    id: ''
+    link: '#'
   },
   {
     label: 'EN',
-    link: '#',
-    id: '',
-    icon: ''
+    link: '#'
   }
 ]
 
