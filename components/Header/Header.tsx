@@ -1,7 +1,15 @@
-import React from "react";
-import "./Header.scss";
+import React, { useEffect, useState } from 'react'
+import { Auth } from 'aws-amplify'
+import { AmplifySignOut } from '@aws-amplify/ui-react'
+import Link from 'next/link'
+import './Header.scss'
 
 const Header = () => {
+  const [isLoggedIn, setLogIn] = useState(false)
+
+  useEffect(() => {
+    Auth.currentAuthenticatedUser().then(() => setLogIn(true))
+  })
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light static-top">
       <div className="container">
@@ -12,54 +20,62 @@ const Header = () => {
 
         <ul className="navbar-nav ml-auto">
           {navItems.map(item => <li className="nav-item">
-            <a className="nav-link" href="{item.link}">
-              {item.label}
-            </a>
-          </li>
-        )}
+              <a className="nav-link" href="{item.link}">
+                {item.label}
+              </a>
+            </li>
+          )}
           <li>
-            <button type="button" className="btn navbar-btn btn-outline-primary btn-login" id="log-in">
-              Log in
-            </button>
+            {
+              isLoggedIn ? (
+                <AmplifySignOut onClick={() => setLogIn(false)}/>
+              ) : (
+                <Link href="/login">
+                  <button type="button" className="btn navbar-btn btn-outline-primary btn-login" id="log-in">
+                    Log in
+                  </button>
+                </Link>
+              )
+            }
           </li>
         </ul>
       </div>
     </nav>
-  );
-};
+  )
+}
 
 const navItems = [
   {
-    label: "Covid-19",
-    link: "#",
-    id: "",
+    label: 'Covid-19',
+    link: '#',
+    id: ''
   },
   {
-    label: "Membership",
-    link: "#",
-    id: "",
+    label: 'Membership',
+    link: '#',
+    id: ''
   },
   {
-    label: "Engage",
-    link: "#",
-    id: "",
+    label: 'Engage',
+    link: '#',
+    id: ''
   },
   {
-    label: "About",
-    link: "#",
-    id: "",
+    label: 'About',
+    link: '#',
+    id: ''
   },
   {
-    label: "New",
-    link: "#",
-    id: "",
+    label: 'New',
+    link: '#',
+    id: ''
   },
   {
-    label: "EN",
-    link: "#",
-    id: "",
-    icon: "",
-  },
-];
+    label: 'EN',
+    link: '#',
+    id: '',
+    icon: ''
+  }
+]
 
-export default Header;
+export default Header
