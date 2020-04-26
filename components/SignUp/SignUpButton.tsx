@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
 
+import './SignUpButton.scss';
+
 const SignUpButton = () => {
   const [show, setShow] = useState(false);
 
@@ -9,7 +11,7 @@ const SignUpButton = () => {
 
   return (
     <>
-      <button className="btn btn-primary" onClick={handleShow}>
+      <button className="btn btn-primary btn-sign-up" onClick={handleShow}>
         Sign Up for Hippo Print
       </button>
       <Modal show={show} onHide={handleClose}>

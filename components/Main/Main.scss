@@ -1,0 +1,48 @@
+@import '../../fonts/fonts.scss';
+
+
+.main {
+  font-size: 21px;
+  .inner-nav {
+    padding: 20px 8px;
+  }
+  .title {
+    margin: 100px 20px;
+    text-align: center;
+    font: {
+      family: $poppins;
+      weight: $regular;
+      size: 30px;
+    }
+  }
+  .subtitle{
+    width: 600px;
+    margin: {
+
+      bottom: 30px;
+    }
+    font: {
+      family: $poppins;
+      weight: $regular;
+      size: 56px;
+    }
+    // line-height: 1.5px;
+  }
+  .main-info {
+    margin: {
+      bottom: 100px
+    }
+    .app-description{
+      margin: {
+        bottom: 50px
+      }
+      font: {
+        size: 21px;
+      }
+    }
+  }
+
+  .community-info{
+    margin-bottom: 30px;
+  }
+}
