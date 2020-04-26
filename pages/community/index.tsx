@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { FC } from 'react';
 import Layout from '../../components/Layout/Layout';
+import ViewTabs from '../../components/ViewTabs/ViewTabs';
 
-const Community = () => {
+const Community: FC = () => {
   return (
     <Layout>
+      <ViewTabs />
       Community
     </Layout>
 
