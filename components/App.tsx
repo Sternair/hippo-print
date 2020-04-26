@@ -1,15 +1,14 @@
 import React from 'react';
 import "./App.scss";
 import "../style.scss";
-import Header from './Header/Header';
 import Main from './Main/Main';
+import Layout from './Layout/Layout';
 
 function App() {
   return (
-   <>
-   <Header></Header>
-   <Main></Main>
-  </>
+    <Layout>
+      <Main></Main>
+    </Layout>
 
   );
 }
