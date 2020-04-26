@@ -1,7 +1,19 @@
 .hippo-table {
   .table {
-    th {
+    border-spacing: 0 20px;
+    border-collapse: separate;
+    tbody {
+      background-color: #FFF;
+      box-shadow: 0 0 13px 0 #efe9e9;
+    }
+    th, td{
       border: none;
+    }
+    td {
+      .img-container {
+        max-width: 170px;
+        max-height: 170px;
+      }
     }
   }
 }

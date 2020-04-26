@@ -26,11 +26,11 @@ const InnerNav = () => {
 const navItems = [
   {
     label: 'General Info',
-    link: '#',
+    link: '/#',
   },
   {
     label: 'FAQ',
-    link: '#',
+    link: '/#',
   },
   {
     label: 'Community Projects',
@@ -38,7 +38,7 @@ const navItems = [
   },
   {
     label: 'Academia',
-    link: '#',
+    link: '/#',
   }
 ]
 

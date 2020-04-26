@@ -10,8 +10,8 @@ const tableData = {
   cols: [
     'Project Name',
     'Review',
-    'Quality level',
-    'Created by'
+    'Likes',
+    'Clarity level'
   ],
   data: mockCommunity
 }
