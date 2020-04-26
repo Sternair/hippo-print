@@ -11,5 +11,6 @@
 			"providerPlugin": "awscloudformation",
 			"dependsOn": []
 		}
-	}
+	},
+	"api": {}
 }

@@ -30,7 +30,7 @@ const Main = () => {
       </div>
 
       <div className="row">
-        <article className="col-9 main-info">
+        <article className="col-8 main-info">
           <h2 className="subtitle">Built for Medical Innovators</h2>
           <div className="app-description">
             <b>HIPPO PRINT</b> is a collaborative community in digital manufacturing. We accelerate the adoption of <b>open
@@ -40,8 +40,8 @@ const Main = () => {
           </div>
           {!isLoggedIn && <SignUpButton/>}
         </article>
-        <div className="col-3">
-          <img src={img} alt="COVR3D" className="landing-img"/>
+        <div className="col-4">
+          <img src={img} alt="COVR3D" className="img-fluid"/>
         </div>
       </div>
 
