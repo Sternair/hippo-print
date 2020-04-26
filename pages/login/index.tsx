@@ -1,10 +1,14 @@
 import React from "react";
 import LogIn from "../../components/LogIn/LogIn";
+import Layout from "../../components/Layout/Layout";
+
 const LoginPage: React.FC = () => {
   return (
-    <div className="loginForm">
-      <LogIn />
-    </div>
+    <Layout>
+      <div className="loginForm">
+        <LogIn />
+      </div>
+    </Layout>
   );
 };
 

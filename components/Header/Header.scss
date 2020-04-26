@@ -1,8 +1,14 @@
+:root {
+  --amplify-primary-color: #e25452;
+  --amplify-primary-tint: #e25452;
+  --amplify-primary-shade: #e25452;
+}
+
 .navbar {
   &.bg-light {
-    background-color: #FFF !important;
+    background-color: #fff !important;
   }
-  &-nav{
+  &-nav {
     align-items: center;
     .nav-item:not(:last-of-type) {
       margin: {
@@ -24,5 +30,28 @@
 
   .btn-login {
     padding: 2px 56px;
+  }
+  .userIcon {
+    height: 35px;
+    width: auto;
+  }
+  .loggedUser {
+    .btn {
+      background-color: transparent;
+      border: 0;
+      outline: transparent;
+      &:focus,
+      &:active,
+      &.active,
+      &:hover {
+        background-color: transparent !important;
+        border: 0 !important;
+        outline: transparent !important;
+        box-shadow: none;
+      }
+    }
+  }
+  .dropdown-item {
+    text-align: center !important;
   }
 }
