@@ -1,28 +1,34 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-@import './fonts/fonts.scss';
+@import "./fonts/fonts.scss";
 
-$primary-color: #F5615F;
+$primary-color: #f5615f;
 $primary-color-alt: #e25452;
 $btn-box-shadow: 0 0 0 0.2rem rgba(226, 84, 82, 0.5);
 
 .btn {
   border-radius: 0;
   &-primary {
-    &, &.disabled, &:disabled {
+    &,
+    &.disabled,
+    &:disabled {
       background-color: $primary-color;
       border-color: $primary-color;
     }
 
-    &:hover, &:focus, &.focus {
+    &:hover,
+    &:focus,
+    &.focus {
       background-color: $primary-color-alt;
       border-color: $primary-color-alt;
     }
-    &:focus, &.focus {
+    &:focus,
+    &.focus {
       box-shadow: $btn-box-shadow;
     }
     &:not(:disabled):not(.disabled) {
-      &:active, &.active {
+      &:active,
+      &.active {
         background-color: $primary-color;
         border-color: $primary-color;
         &:focus {
@@ -33,21 +39,27 @@ $btn-box-shadow: 0 0 0 0.2rem rgba(226, 84, 82, 0.5);
   }
 
   &-outline-primary {
-    &, &.disabled, &:disabled {
+    &,
+    &.disabled,
+    &:disabled {
       color: $primary-color;
       border-color: $primary-color;
       background-color: transparent;
     }
 
-    &:hover, &:focus, &.focus {
+    &:hover,
+    &:focus,
+    &.focus {
       background-color: $primary-color;
       border-color: $primary-color;
     }
-    &:focus, &.focus {
+    &:focus,
+    &.focus {
       box-shadow: $btn-box-shadow;
     }
     &:not(:disabled):not(.disabled) {
-      &:active, &.active {
+      &:active,
+      &.active {
         background-color: $primary-color;
         border-color: $primary-color;
         &:focus {
