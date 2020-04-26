@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import InnerNav from '../InnerNav/InnerNav'
 import SignUpButton from '../SignUp/SignUpButton'
 import './Main.scss'
 import { Auth } from 'aws-amplify'
