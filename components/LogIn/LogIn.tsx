@@ -1,7 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { withAuthenticator } from '@aws-amplify/ui-react'
+import { Hub } from 'aws-amplify'
+import Router from 'next/router'
 
-const LogIn: React.FC = () => {
+const LogIn: React.FC = (props) => {
+  useEffect(() => {
+    Hub.listen('auth', ({ payload: { event, data } }) => {
+      switch (event) {
+        case 'signIn':
+        case 'signOut':
+          Router.push('/')
+      }
+    })
+  }, [props])
+
   return (
     <div>
       Login
@@ -10,6 +22,5 @@ const LogIn: React.FC = () => {
 }
 
 export default withAuthenticator(LogIn, {
-  usernameAlias: 'email',
-
+  usernameAlias: 'email'
 })
