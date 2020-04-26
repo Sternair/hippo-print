@@ -29,7 +29,7 @@ const tabItems = [
   },
   {
     label: 'Community Projects',
-    link: '/community',
+    link: '/community-projects',
   },
   {
     label: 'Starred Items',

@@ -3,7 +3,8 @@ import SignUpButton from '../SignUp/SignUpButton'
 import './Main.scss'
 import { Auth } from 'aws-amplify'
 
-import img from '../../public/COVR3D_V2.08_fit.jpg';
+import img from '../../public/COVR3D_V2.08_fit.jpg'
+import Link from 'next/link'
 
 const Main = () => {
   const [isLoggedIn, setLogIn] = useState(false)
@@ -11,11 +12,12 @@ const Main = () => {
   useEffect(() => {
     Auth.currentAuthenticatedUser()
       .then(() => setLogIn(true))
-      .catch(e => { }) // throws if user is not logged in --> ignore
+      .catch(e => {
+      }) // throws if user is not logged in --> ignore
   })
 
   return (
-    <div className="container-fluid main">
+    <div className="container-fluid main pb-5">
       <div className='container'>
         <div className="row">
           <div className="col-12">
@@ -26,15 +28,17 @@ const Main = () => {
           <article className="col-8 main-info">
             <h2 className="subtitle">Built for Medical Innovators</h2>
             <div className="app-description">
-              <b>HIPPO PRINT</b> is a collaborative community in digital manufacturing. We accelerate the adoption of <b>open
-            source</b> digital manufacturing technologies that focus on optimizing the medical supply chain and increase
-            efficiency
-            and agility, while <b>lowering the carbon footprint</b> and price.
-          </div>
-            {!isLoggedIn && <SignUpButton />}
+              <b>HIPPO PRINT</b> is a collaborative community in digital manufacturing. We accelerate the adoption
+              of <b>open
+              source</b> digital manufacturing technologies that focus on optimizing the medical supply chain and
+              increase
+              efficiency
+              and agility, while <b>lowering the carbon footprint</b> and price.
+            </div>
+            {!isLoggedIn && <SignUpButton/>}
           </article>
           <div className="col-4">
-            <img src={img} alt="COVR3D" className="img-fluid" />
+            <img src={img} alt="COVR3D" className="img-fluid"/>
           </div>
         </div>
 
@@ -43,7 +47,11 @@ const Main = () => {
             <h2 className="subtitle">Community Projects</h2>
             <div className="community-info">Come and discover our collection of community projects.</div>
             <div>
-              <button className="btn btn-outline-primary">Discover Projects</button>
+              <Link href="/community-projects">
+                <button className="btn btn-outline-primary">
+                  Discover Projects
+                </button>
+              </Link>
             </div>
           </div>
         </div>
