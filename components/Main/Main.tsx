@@ -3,7 +3,7 @@ import SignUpButton from '../SignUp/SignUpButton'
 import './Main.scss'
 import { Auth } from 'aws-amplify'
 
-import img from '../../public / COVR3D_V2.08_fit.jpg';
+import img from '../../public/COVR3D_V2.08_fit.jpg';
 
 const Main = () => {
   const [isLoggedIn, setLogIn] = useState(false)

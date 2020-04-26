@@ -1,4 +1,5 @@
 import React from 'react';
+import { Stars } from '../Stars/Stars';
 
 import './Table.scss';
 
@@ -17,7 +18,7 @@ const Table = ({ cols, data }: { cols: string[], data: { [k: string]: string | n
                 {item.name}
               </td>
               <td>
-                {item.voting}
+                <Stars selected={item.voting}/>
               </td>
               <td>
                 {item.likes}
