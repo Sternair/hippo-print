@@ -8,7 +8,9 @@ const Header = () => {
   const [isLoggedIn, setLogIn] = useState(false)
 
   useEffect(() => {
-    Auth.currentAuthenticatedUser().then(() => setLogIn(true))
+    Auth.currentAuthenticatedUser()
+      .then(() => setLogIn(true))
+      .catch(e => {}) // throws if user is not logged in --> ignore
   })
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light static-top">
