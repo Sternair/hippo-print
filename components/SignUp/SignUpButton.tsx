@@ -1,13 +1,46 @@
-import React, { useState } from "react";
-import { Modal, Button } from "react-bootstrap";
+import React, { useState } from 'react'
+import { Button, Modal } from 'react-bootstrap'
+import { Auth } from 'aws-amplify'
 
 import './SignUpButton.scss';
 
 const SignUpButton = () => {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(false)
+  const [userData, setUserData] = useState({ email: '', password: '' })
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleClose = () => {
+    setUserData({ email: '', password: '' })
+    setShow(false)
+  }
+  const handleShow = () => setShow(true)
+
+  const changeHandler = (event: any) => {
+    const name = event.target.name
+    const value = event.target.value
+
+    setUserData({
+      ...userData,
+      [name]: value
+    })
+  }
+
+  const onSubmit = async () => {
+    // await signUp()
+    console.log(userData)
+    handleClose()
+  }
+
+  const signUp = async () => {
+    try {
+      const user = await Auth.signUp({
+        username: userData.email,
+        password: userData.password
+      })
+      console.log({ user })
+    } catch (error) {
+      console.log('error signing up:', error)
+    }
+  }
 
   return (
     <>
@@ -21,27 +54,23 @@ const SignUpButton = () => {
         <Modal.Body>
           <form action="">
             <div>
-              <label htmlFor="username">Username</label>
-              <input type="text" />
-            </div>
-            <div>
               <label htmlFor="email">Email</label>
-              <input type="text" />
+              <input type="email" name="email" value={userData.email} onChange={changeHandler}/>
             </div>
             <div>
               <label htmlFor="password">Password</label>
-              <input type="password" />
+              <input type="password" name="password" value={userData.password} onChange={changeHandler}/>
             </div>
           </form>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="primary" onClick={handleClose}>
+          <Button variant="primary" onClick={onSubmit}>
             Sign Up for Hippo Print
           </Button>
         </Modal.Footer>
       </Modal>
     </>
-  );
-};
+  )
+}
 
-export default SignUpButton;
+export default SignUpButton

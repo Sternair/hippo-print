@@ -1,23 +1,15 @@
 {
     "prod": {
         "awscloudformation": {
-            "AuthRoleName": "amplify-hippo-print-prod-143829-authRole",
-            "UnauthRoleArn": "arn:aws:iam::293735549591:role/amplify-hippo-print-prod-143829-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::293735549591:role/amplify-hippo-print-prod-143829-authRole",
+            "AuthRoleName": "amplify-hippo-print-prod-01243-authRole",
+            "UnauthRoleArn": "arn:aws:iam::293735549591:role/amplify-hippo-print-prod-01243-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::293735549591:role/amplify-hippo-print-prod-01243-authRole",
             "Region": "eu-central-1",
-            "DeploymentBucketName": "amplify-hippo-print-prod-143829-deployment",
-            "UnauthRoleName": "amplify-hippo-print-prod-143829-unauthRole",
-            "StackName": "amplify-hippo-print-prod-143829",
-            "StackId": "arn:aws:cloudformation:eu-central-1:293735549591:stack/amplify-hippo-print-prod-143829/56ec3750-855f-11ea-acd9-0aee1f35785e",
-            "AmplifyAppId": "d179gc63nzbazz"
-        },
-        "categories": {
-            "hosting": {
-                "amplifyhosting": {
-                    "appId": "d179gc63nzbazz",
-                    "type": "cicd"
-                }
-            }
+            "DeploymentBucketName": "amplify-hippo-print-prod-01243-deployment",
+            "UnauthRoleName": "amplify-hippo-print-prod-01243-unauthRole",
+            "StackName": "amplify-hippo-print-prod-01243",
+            "StackId": "arn:aws:cloudformation:eu-central-1:293735549591:stack/amplify-hippo-print-prod-01243/e37b15e0-8741-11ea-a0c4-06247d577dba",
+            "AmplifyAppId": "d2net03htg75hc"
         }
     }
 }
