@@ -15,7 +15,8 @@ const Main = () => {
   })
 
   return (
-    <div className='main'>
+    <div className="container-fluid main">
+      <div className='container'>
       <div className="row">
         <div className="col-12">
           <h1 className="title">Europe’s Digital Manufacturing Community Making Medical Manufacturing Local Again</h1>
@@ -46,6 +47,7 @@ const Main = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   )
 }
