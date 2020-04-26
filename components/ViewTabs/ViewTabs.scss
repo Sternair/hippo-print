@@ -3,12 +3,14 @@
 .view-tabs{
   &.nav-tabs {
     .nav-link {
-      a {
-        color: #000;
+      color: #000;
+      &:hover, &:focus {
+        border-color: transparent;
+        border-bottom: 3px $primary-color solid;
       }
       &.active {
         border-color: transparent;
-        border-bottom: 2px $primary-color solid;
+        border-bottom: 3px $primary-color solid;
       }
     }
   }
