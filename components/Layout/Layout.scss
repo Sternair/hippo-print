@@ -1,10 +1,12 @@
 @import '../../fonts/fonts.scss';
 
-
-.layout {
-  padding-bottom: 40px;
-  font-size: 21px;
-  .inner-nav {
-    padding: 20px 8px;
+.main-layout{
+  .nav-container {
+    padding-bottom: 40px;
+    font-size: 21px;
+    background-color: #FFF;
+    .inner-nav {
+      padding: 20px 8px;
+    }
   }
 }
