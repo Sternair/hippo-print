@@ -4,6 +4,8 @@ import SignUpButton from '../SignUp/SignUpButton'
 import './Main.scss'
 import { Auth } from 'aws-amplify'
 
+import img from "../../public/COVR3D_V2.08_fit.jpg";
+
 const Main = () => {
   const [isLoggedIn, setLogIn] = useState(false)
 
@@ -39,7 +41,7 @@ const Main = () => {
           {!isLoggedIn && <SignUpButton/>}
         </article>
         <div className="col-3">
-          <img src="/COVR3D_V2.08_fit.png" alt="COVR3D"/>
+          <img src={img} alt="COVR3D" className="landing-img"/>
         </div>
       </div>
 

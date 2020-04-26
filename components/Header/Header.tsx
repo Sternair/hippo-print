@@ -21,7 +21,7 @@ const Header = () => {
         </a>
 
         <ul className="navbar-nav ml-auto">
-          {navItems.map(item => <li className="nav-item">
+          {navItems.map((item, i) => <li className="nav-item" key={i}>
               <a className="nav-link" href="{item.link}">
                 {item.label}
               </a>
