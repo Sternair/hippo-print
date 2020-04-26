@@ -1,6 +1,6 @@
 import React from 'react'
 import Amplify from 'aws-amplify'
-import '../style.scss'
+import '../styles/style.scss'
 import App from '../components/App'
 import awsExports from '../lib/aws-exports'
 
