@@ -2,7 +2,7 @@ const mockDesignsPart = [
   {
     id: '0',
     title: 'COVR3D - individual Masks V2.08',
-    imageUrl: '/mock/COVR3D_V2.08_fit3.jpg',
+    imageUrl: '/mock/COVR3D_V2.08_fit.jpg',
     voting: 5,
     likes: 4289,
     qualityLevel: 'CE Certified',
@@ -12,7 +12,7 @@ const mockDesignsPart = [
   {
     id: '0',
     title: 'Easy Covid-19 emergency mask for hospital ventilators',
-    imageUrl: '/mock/COVR3D_V2.08_fit3.jpg',
+    imageUrl: '/mock/DSC3147-scaled_large.png',
     voting: 4,
     likes: 2039,
     qualityLevel: 'Reviewed for clinical use',
@@ -22,7 +22,7 @@ const mockDesignsPart = [
   {
     id: '0',
     title: 'Respirator breathing mask with hepa filter',
-    imageUrl: '/mock/COVR3D_V2.08_fit3.jpg',
+    imageUrl: '/mock/IMG_20200325_170325_large.jpg',
     voting: 3,
     likes: 848,
     qualityLevel: 'Optimized for community use',
