@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../../components/Layout/Layout'
 import { mockDesigns } from '../../mocks/mockDesigns'
 import { Card } from '../../components/Card/Card'
+import { getDisplayDate } from '../../utils'
 
 const GalleryPage: React.FC = () => {
   return (
@@ -11,9 +12,10 @@ const GalleryPage: React.FC = () => {
       </h1>
       <div className="row">
         <div className="col-3">
-          Filters
+          <h5>Filter</h5>
         </div>
         <div className="col-9">
+          <h5>Designs</h5>
           {mockDesigns.map((design) => (
             <Card key={design.id}>
               <div className="row p-3">
@@ -21,7 +23,8 @@ const GalleryPage: React.FC = () => {
                   <img src={design.imageUrl} className="img-fluid"/>
                 </div>
                 <div className="col-7">
-                  {design.title}
+                  <h5>{design.title}</h5>
+                  <p>by {design.createdBy}, {getDisplayDate(design.createdAt)}</p>
                 </div>
               </div>
             </Card>
