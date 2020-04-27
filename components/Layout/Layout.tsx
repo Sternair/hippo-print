@@ -1,7 +1,7 @@
 import React from "react";
 import InnerNav from "../InnerNav/InnerNav";
 import Header from "../Header/Header";
-
+import { Footer } from '../Footer/Footer'
 import "./Layout.scss";
 
 const Layout = ({ children }: any) => {
@@ -17,7 +17,12 @@ const Layout = ({ children }: any) => {
           </div>
         </div>
       </div>
-      {children}
+      <div style={{minHeight: '70vh'}}>
+        {children}
+      </div>
+      <footer>
+        <Footer/>
+      </footer>
     </div>
   );
 };
